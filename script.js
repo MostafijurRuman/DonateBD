@@ -88,8 +88,18 @@ document.getElementById("donate-btn1").addEventListener("click", function() {
   handleDonation("donate-input", "currentFund", "main-balance", "donation-title");
 });
 
-// Add more event listeners for other donation buttons here
-// Example:
-// document.getElementById("btn-donate-another").addEventListener("click", function() {
-//   handleDonation("donate-another", "currentFund-another", "main-balance", "donation-title-another");
-// });
+document.getElementById("donate-btn2").addEventListener("click", function() {
+  handleDonation("donate-input2", "currentFund2", "main-balance", "donation-title2");
+});
+
+document.getElementById("donate-btn3").addEventListener("click", function() {
+  handleDonation("donate-input3", "currentFund3", "main-balance", "donation-title3");
+});
+
+document.getElementById("donate-btn4").addEventListener("click", function() {
+  handleDonation("donate-input4", "currentFund4", "main-balance", "donation-title4");
+});
+
+document.getElementById("donate-btn5").addEventListener("click", function() {
+  handleDonation("donate-input5", "currentFund5", "main-balance", "donation-title5");
+});
