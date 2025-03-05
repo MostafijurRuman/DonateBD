@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=., initial-scale=1.0">
-    <title>Blog</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DonateBD</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- DaisyUI & Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Style Using Tailwind -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #b4f461;
+        --color-secondary: #f9f7f3;
+        --color-text: rgba(17, 17, 17, 0.7);
+        --color-coinbg: #f3f3f3;
+        --font-Lexend: "Lexend", "sans-serif";
+      }
+    </style>
+  </head>
+  <body class="font-Lexend">
+    <header class="sticky top-0 backdrop-blur bg-opacity-75 z-10">
+      <nav class="bg-secondary">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-16 lg:px-28">
+          <div class="flex  justify-between items-center pt-4 pb-6">
+            <a href="./blog.html">
+              <button class="btn flex p-3 px-8 mt-4 md:mt-0 justify-center items-center gap-2.5 text-black font-semibold text-lg sm:text-xl bg-primary">Blog</button>
+            </a>
+            <div class="flex justify-center items-center gap-4 mt-4 sm:mt-0">
+              <a href="./index.html"><img src="./assets/logo.png" alt="" class="h-8 w-8 sm:h-10 sm:w-10"></a>
+              <a href="./index.html"><h1 class="hidden sm:block text-black text-2xl sm:text-4xl font-semibold">DonateBD</h1></a>
+            </div>
+            <div class="flex items-center gap-1 mt-4 sm:mt-0">
+              <img src="./assets/coin.png" alt="">
+              <h1 id="main-balance" class="text-text text-lg sm:text-xl font-medium">5000 </h1><span class="text-text text-lg sm:text-xl font-medium">BDT</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-16 lg:px-28 py-8 text-center relative">
+            <div class="flex justify-center  mb-4 mt-2 mr-2">
+                <img src="./assets/qna.gif" alt="Animated Icon" class="h-16 w-16">
+            </div>
+            <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions (FAQ)</h2>
+           
+            <div class="space-y-4">
+                <div tabindex="0" class="collapse collapse-arrow bg-secondary p-4 rounded-lg shadow">
+                    <div class="collapse-title text-xl font-semibold">
+                        What is the Document Object Model (DOM)?
+                    </div>
+                    <div class="collapse-content text-text mt-2">
+                        <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-arrow bg-secondary p-4 rounded-lg shadow">
+                    <div class="collapse-title text-xl font-semibold">
+                        How do you select an element from the DOM?
+                    </div>
+                    <div class="collapse-content text-text mt-2">
+                        <p>You can select an element from the DOM using methods like <code>document.getElementById</code>, <code>document.getElementsByClassName</code>, <code>document.getElementsByTagName</code>, <code>document.querySelector</code>, and <code>document.querySelectorAll</code>.</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-arrow bg-secondary p-4 rounded-lg shadow">
+                    <div class="collapse-title text-xl font-semibold">
+                        What is event delegation in the context of the DOM, and why is it useful?
+                    </div>
+                    <div class="collapse-content text-text mt-2">
+                        <p>Event delegation is a technique involving adding a single event listener to a parent element that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future. It is useful because it allows you to avoid adding event listeners to individual elements, which can improve performance and simplify code.</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-arrow bg-secondary p-4 rounded-lg shadow">
+                    <div class="collapse-title text-xl font-semibold">
+                        How do you manipulate an element's attributes and styles using the DOM?
+                    </div>
+                    <div class="collapse-content text-text mt-2">
+                        <p>You can manipulate an element's attributes using methods like <code>setAttribute</code>, <code>getAttribute</code>, and <code>removeAttribute</code>. To manipulate styles, you can use the <code>style</code> property to set CSS properties directly or use classes to apply predefined styles.</p>
+                    </div>
+                </div>
+            </div>
+        </section></div>
+    </main>
+
+    <footer class="bg-secondary h-40 w-full mt-8"></footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
